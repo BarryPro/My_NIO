@@ -10,8 +10,16 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
 
-public class E {
+/**
+ * The type E.
+ */
+public class PathsCharBufferFileTest {
 
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		simpleFile();
 	}
@@ -22,7 +30,6 @@ public class E {
 			byte[] bytes=Files.readAllBytes(file);
 			System.out.println(new String(bytes,"utf-8"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

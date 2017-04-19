@@ -7,8 +7,17 @@ import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
 
 import static java.nio.file.StandardWatchEventKinds.*;
-public class F {
 
+/**
+ * The type F.
+ */
+public class WatchServiceTest {
+
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		try {
 			WatchService watcher=FileSystems.getDefault().newWatchService();

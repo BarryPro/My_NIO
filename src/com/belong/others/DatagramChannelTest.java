@@ -8,8 +8,15 @@ import java.net.StandardSocketOptions;
 import java.nio.channels.DatagramChannel;
 import java.nio.channels.MembershipKey;
 
-public class L {
-
+/**
+ * The type L.
+ */
+public class DatagramChannelTest {
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		try {
 			NetworkInterface networkInterface=NetworkInterface.getByName("net1");

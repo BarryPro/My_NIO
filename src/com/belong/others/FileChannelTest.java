@@ -9,7 +9,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
-public class G {
+/**
+ * The type File channel test.
+ */
+public class FileChannelTest {
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		writeData();
 	}
@@ -34,9 +42,7 @@ public class G {
 		try {
 			fc = new RandomAccessFile("c:\\1.txt","rw").getChannel();
 			fc.position(fc.size());
-
 			fc.write(ByteBuffer.wrap("".getBytes()));
-
 			fc.close();  
 		} catch (Exception e) {
 			e.printStackTrace();

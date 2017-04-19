@@ -9,11 +9,23 @@ import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
-public class B {
-	
+/**
+ * The type B.
+ */
+public class PathTreeTest {
+
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		whileTree();
 	}
+
+	/**
+	 * While tree.
+	 */
 	public static void whileTree(){
 		Path startingDir=Paths.get("c:\\");
 		try {

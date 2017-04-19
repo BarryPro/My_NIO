@@ -6,7 +6,15 @@ import java.nio.channels.CompletionHandler;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class I {
+/**
+ * The type .
+ */
+public class AsynchronousFileChannelTest3 {
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		AsynchronousFileChannel channel=null;
 		try {

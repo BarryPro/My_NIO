@@ -5,7 +5,15 @@ import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class A {
+/**
+ * The type A.
+ */
+public class PathsTest {
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		Path listing=Paths.get("D:\\logs\\log.log");
 		Path listing1=FileSystems.getDefault().getPath("D:\\logs\\log.log");

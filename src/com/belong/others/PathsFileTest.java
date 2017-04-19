@@ -11,7 +11,14 @@ import java.nio.file.attribute.PosixFilePermission;
 import java.util.Set;
 
 import static java.nio.file.StandardCopyOption.*;
-public class C {
+
+/**
+ * The type C.
+ */
+public class PathsFileTest {
+	/**
+	 * Move file.
+	 */
 	public static void moveFile(){
 		try {
 			Path source=Paths.get("c://2.sql");
@@ -21,6 +28,10 @@ public class C {
 			e.printStackTrace();
 		}
 	}
+
+	/**
+	 * Copy file.
+	 */
 	public static void copyFile(){
 		try {
 			Path source=Paths.get("c://22.sql");
@@ -30,6 +41,10 @@ public class C {
 			e.printStackTrace();
 		}
 	}
+
+	/**
+	 * Del file.
+	 */
 	public static void delFile(){
 		Path target=Paths.get("c://11.sql");
 		try {
@@ -38,6 +53,10 @@ public class C {
 			e.printStackTrace();
 		}
 	}
+
+	/**
+	 * Create file.
+	 */
 	public static void createFile(){
 		Path target=Paths.get("c://1.sql");
 		try {
@@ -46,6 +65,10 @@ public class C {
 			e.printStackTrace();
 		}
 	}
+
+	/**
+	 * Set attr.
+	 */
 	public static void setAttr(){
 		Path target=Paths.get("c://1.sql");
 
@@ -57,6 +80,10 @@ public class C {
 			e.printStackTrace();
 		}
 	}
+
+	/**
+	 * Get attr.
+	 */
 	public static void getAttr(){
 		Path path = Paths.get("c://1.sql");  
 		DosFileAttributeView view = Files.getFileAttributeView(path, DosFileAttributeView.class);  
@@ -71,6 +98,10 @@ public class C {
 			System.out.println(attrs.isReadOnly());  
 		}  
 	}
+
+	/**
+	 * Set attr 1.
+	 */
 	public static void setAttr1(){
 		try {
 
@@ -93,6 +124,12 @@ public class C {
 		}
 
 	}
+
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		copyFile();
 		

@@ -8,7 +8,15 @@ import java.nio.channels.NetworkChannel;
 import java.nio.channels.spi.SelectorProvider;
 import java.util.Set;
 
-public class K {
+/**
+ * The type K.
+ */
+public class SelectorProviderTest {
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		SelectorProvider provider=SelectorProvider.provider();
 		try {

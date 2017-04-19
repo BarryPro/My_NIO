@@ -9,8 +9,19 @@ import java.nio.file.Paths;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-public class J {
-    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {        
+/**
+ * The type J.
+ */
+public class AsynchronousFileChannelTest2 {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws IOException          the io exception
+     * @throws InterruptedException the interrupted exception
+     * @throws ExecutionException   the execution exception
+     */
+    public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
         Path filePath = Paths.get("1.sql");  
         AsynchronousFileChannel afc = AsynchronousFileChannel.open(filePath);  
         ByteBuffer byteBuffer = ByteBuffer.allocate(16 * 1024);

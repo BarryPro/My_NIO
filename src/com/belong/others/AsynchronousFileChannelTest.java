@@ -6,8 +6,16 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.concurrent.Future;
 
-public class H {
+/**
+ * The type H.
+ */
+public class AsynchronousFileChannelTest {
 
+	/**
+	 * The entry point of application.
+	 *
+	 * @param args the input arguments
+	 */
 	public static void main(String[] args) {
 		try {
 
